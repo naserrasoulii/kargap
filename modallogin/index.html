@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="loginForm">
+        <div class="loginFormCustom">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-8 col-md-6 col-lg-5 mt-5 formContainer">
+                        <div class="bg-white rounded-sm shadow py-4 px-3 px-md-4 px-lg-5">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="./assets/images/logo-kargap 3.svg" class="img-fluid" width="120" />
+                                <h3 class="titleForm">
+                                    ورود به ناحیه کاربری
+                                </h3>
+                                <div class="formLoginInput">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="numberPhone">تلفن همراه</label>
+                                            <input type="text" class="form-control inputCustomLogin" id="numberPhone" a>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="codeOTP">کد تایید</label>
+                                            <input disabled type="text" class="form-control inputCustomLogin"
+                                                id="codeOTP">
+                                        </div>
+
+                                        <a href="modalLogin1Custom" data-toggle="modal" data-target="#modalLogin1Custom"
+                                            class="btn btn-primary btnCustomSend px-3 mt-3">ارسال</a>
+
+                                        <a href="modalLogin1CustomSuccess" data-toggle="modal"
+                                            data-target="#modalLogin1CustomSuccess"
+                                            class="btn btn-primary btnCustomSend px-3 mt-3">عملیات موفق</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade modalCustomLogin1" id="modalLogin1CustomSuccess" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+
+                <div class="modal-body ">
+                    <p>
+                        عملیات موفق
+                    </p>
+                    <p class="textInfo">
+                        کد پیامکی با موفقیت ارسال شد
+                    </p>
+                    <img src="./assets/images/success.svg" class="img-fluid" width="50" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modalCustomLogin" id="modalLogin1Custom" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+
+                <div class="modal-body py-3">
+                    <p>
+                        لطفا کمی صبر کنید
+                    </p>
+                    <div class="loadingio-spinner-spin-lykettd2j ">
+                        <div class="ldio-8qrilnncd9u">
+                            <div>
+                                <div></div>
+                            </div>
+                            <div>
+                                <div></div>
+                            </div>
+                            <div>
+                                <div></div>
+                            </div>
+                            <div>
+                                <div></div>
+                            </div>
+                            <div>
+                                <div></div>
+                            </div>
+                            <div>
+                                <div></div>
+                            </div>
+                            <div>
+                                <div></div>
+                            </div>
+                            <div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/jquery.slim.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+
+</body>
+
+</html>
