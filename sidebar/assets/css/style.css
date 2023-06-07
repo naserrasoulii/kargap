@@ -1,0 +1,291 @@
+@font-face {
+  font-family: "peyda";
+  src: url("./../fonts/PeydaWebFaNum-Regular.woff2"),
+    url("./../fonts/PeydaWebFaNum-Regular.woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "peyda";
+  src: url("./../fonts/PeydaWebFaNum-Bold.woff2"),
+    url("./../fonts/PeydaWebFaNum-Bold.woff");
+  font-weight: bold;
+}
+body {
+  font-family: "peyda";
+  overflow-x: hidden;
+}
+:root {
+  --lightColorCustom1: #e8e8e8;
+  --lightColorCustom2: #a4a4a4;
+  --blueColorCustom1: #7b5fbb;
+  --blueColorCustom2: #66509ab0;
+  --widthSideBar: 250px;
+  --widthMain: 100px;
+}
+.homeWithSideBar {
+  direction: rtl;
+  text-align: right;
+}
+
+.homeWithSideBar .sideBar {
+  transition: all 0.3s;
+  position: absolute;
+  top: 20px;
+  right: -100%;
+  padding-bottom: 20px;
+  min-height: 95vh;
+  background-color: var(--lightColorCustom1);
+  border-radius: 10px;
+}
+.homeWithSideBar .sideBar.show {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  padding-bottom: 20px;
+  min-height: 95vh;
+  width: var(--widthSideBar);
+  background-color: var(--lightColorCustom1);
+  border-radius: 10px;
+}
+.homeWithSideBar .btnCloseMenu {
+  width: 18px;
+  height: 50px;
+  background-color: var(--lightColorCustom2);
+  display: flex;
+  align-items: center;
+  border-radius: 10px 0 0 10px;
+  padding: 0.2rem;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.homeWithSideBar .btnCloseMenu.show {
+  right: calc(var(--widthSideBar) + 14px);
+  top: 50%;
+}
+.homeWithSideBar .btnCloseMenu img {
+  transform: rotate(180deg);
+  transition: all 0.2s;
+}
+.homeWithSideBar .btnCloseMenu.show img {
+  transform: rotate(0);
+}
+
+.homeWithSideBar .iframeContainerCustom {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  min-height: 95vh;
+  background-color: var(--lightColorCustom1);
+  border-radius: 10px;
+  width: calc(100% - 60px);
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.homeWithSideBar .iframeContainerCustom.show {
+  left: 10px;
+  width: calc(100% - var(--widthSideBar) - 60px);
+}
+.homeWithSideBar .iframeContainerCustom iframe {
+  width: 100%;
+  min-height: 95vh;
+  border: none;
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+}
+/* .homeWithSideBar .sideBar {
+  
+} */
+
+.homeWithSideBar .sideBar .itemContainer1 .navCustom {
+  padding: 0 !important;
+  padding-bottom: 200px !important;
+}
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .navLinkCustom {
+  color: var(--lightColorCustom2);
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  background: transparent;
+}
+.homeWithSideBar
+  .sideBar
+  .itemContainer1
+  .navCustom
+  .navLinkCustom.dropdown-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.homeWithSideBar
+  .sideBar
+  .itemContainer1
+  .navCustom
+  .navLinkCustom.dropdown-toggle::after {
+  background: url("./../images/arrow-bottom.svg");
+  border: none;
+  width: 16px;
+  height: 9px;
+  text-align: left;
+  background-size: 100% 100%;
+}
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .navItemCustom {
+  position: relative;
+}
+.homeWithSideBar
+  .sideBar
+  .itemContainer1
+  .navCustom
+  .navItemCustom.active
+  .navLinkCustom {
+  color: #fff;
+  z-index: 1;
+}
+
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .navItemCustom i {
+  color: var(--blueColorCustom1);
+  font-size: 1.3rem;
+}
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .navItemCustom i::before {
+  vertical-align: middle;
+}
+
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .navItemCustom.active i {
+  z-index: 1;
+  color: #fff !important;
+}
+/*
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .navItemCustom.active svg {
+  z-index: 1;
+} 
+*/
+/* 
+ */
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .navItemCustom.active img {
+  stroke: #fff !important;
+}
+.mtCustom1 {
+  margin-top: 0.6rem;
+}
+.homeWithSideBar
+  .sideBar
+  .itemContainer1
+  .navCustom
+  .navItemCustom.active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -26px;
+  width: calc(var(--widthSideBar) + 20px);
+  height: calc(100% + 10px);
+  background-color: var(--blueColorCustom1);
+  border-radius: 5px;
+  z-index: 0;
+}
+
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .nav-item {
+  margin-bottom: 1rem;
+}
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .dropdown-menu.show {
+  position: static !important;
+  margin-bottom: 1rem;
+  transform: none !important;
+  background: transparent;
+  border: none;
+  text-align: right;
+}
+.homeWithSideBar
+  .sideBar
+  .itemContainer1
+  .navCustom
+  .dropdown-menu.show
+  .dropdown-item {
+  background: transparent;
+}
+
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .dropdown-menu.show a {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .toggleDiv.show a {
+  color: #fff;
+  cursor: pointer;
+}
+.homeWithSideBar
+  .sideBar
+  .itemContainer1
+  .navCustom
+  .dropdown-menu.show
+  button {
+  color: #fff;
+  font-size: 1rem;
+  white-space: normal;
+}
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .toggleDiv.show button {
+  color: #fff;
+  white-space: normal;
+}
+.homeWithSideBar
+  .sideBar
+  .itemContainer1
+  .navCustom
+  .toggleDiv.show
+  .navLinkCustom::after {
+  transform: rotate(180deg);
+  color: #fff;
+}
+.homeWithSideBar
+  .sideBar
+  .itemContainer1
+  .navCustom
+  .toggleDiv
+  .navLinkCustom::after {
+  transition: all 0.3s;
+}
+
+.homeWithSideBar .sideBar .itemFooter {
+  background-color: var(--lightColorCustom2);
+  width: var(--widthSideBar);
+  /* transform: translateX(1rem); */
+  padding: 1rem 0;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.homeWithSideBar .sideBar .itemFooter .navCustom .navItemCustom .navLinkCustom {
+  font-weight: bold;
+  color: var(--blueColorCustom2);
+  font-size: 18px;
+  z-index: 1;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--lightColorCustom2);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blueColorCustom1);
+}
+
+.homeWithSideBar .sideBar .itemContainer1::-webkit-scrollbar {
+  width: 0px;
+}

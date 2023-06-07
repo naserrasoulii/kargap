@@ -1,0 +1,103 @@
+[
+  {
+    "title": "صفحه اصلی",
+    "icon": "bi bi-pencil-square",
+    "target": "/",
+    "dropdown": []
+  },
+  {
+    "title": "افزودن محصول",
+    "icon": "bi bi-plus-square",
+    "target": "/",
+    "dropdown": []
+  },
+  {
+    "title": "بلاگ و افزودن نوشته",
+    "icon": "bi bi-body-text",
+    "target": "/",
+    "dropdown": []
+  },
+  {
+    "title": "فروشگاه شما",
+    "icon": "bi bi-basket2",
+    "target": "/",
+    "dropdown": [
+      {
+        "title": "محصولات",
+        "icon": "bi bi-cart4",
+        "target": "/"
+      },
+      {
+        "title": "سفارش ها",
+        "icon": "bi bi-bag",
+        "target": "/"
+      },
+      {
+        "title": "مشتریان",
+        "icon": "bi bi-people",
+        "target": "/"
+      },
+      {
+        "title": "کد های تحفیف",
+        "icon": "bi bi-percent",
+        "target": "/"
+      }
+    ]
+  },
+  {
+    "title": "تغییر لوگو",
+    "icon": "bi bi-textarea-t",
+    "target": "/",
+    "dropdown": []
+  },
+  {
+    "title": "ویرایش صفحات",
+    "icon": "bi bi-file-earmark-text",
+    "target": "/",
+    "dropdown": []
+  },
+  {
+    "title": "تنظیمات فروشگاه",
+    "icon": "bi bi-gear",
+    "target": "/",
+    "dropdown": [
+      {
+        "title": "توضیح محصول",
+        "icon": "bi bi-info-circle",
+        "target": "/"
+      },
+      {
+        "title": "تغییر اسلایدر",
+        "icon": "bi bi-images",
+        "target": "/"
+      },
+      {
+        "title": "فرم های ثبت شده",
+        "icon": "bi bi-file-earmark-text",
+        "target": "/"
+      },
+      {
+        "title": "نظرات کاربران",
+        "icon": "bi bi-chat-square-text",
+        "target": "/"
+      }
+    ]
+  },
+  {
+    "title": "منو و دسته بندی",
+    "icon": "bi bi-ui-checks-grid",
+    "target": "/",
+    "dropdown": [
+      {
+        "title": "فهرست اول سایت",
+        "icon": "bi bi-menu-button-wide",
+        "target": "/"
+      },
+      {
+        "title": "دسته بندی محصولات",
+        "icon": "bi bi-ui-checks",
+        "target": "/"
+      }
+    ]
+  }
+]
