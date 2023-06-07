@@ -91,16 +91,12 @@ body {
 }
 .homeWithSideBar .iframeContainerCustom iframe {
   width: 100%;
-  min-height: 95vh;
+  height: 100%;
   border: none;
   position: absolute;
   top: 0;
   border-radius: 10px;
 }
-/* .homeWithSideBar .sideBar {
-  
-} */
-
 .homeWithSideBar .sideBar .itemContainer1 .navCustom {
   padding: 0 !important;
   padding-bottom: 200px !important;
