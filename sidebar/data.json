@@ -3,24 +3,29 @@
     "title": "صفحه اصلی",
     "icon": "bi bi-pencil-square",
     "target": "/",
+    "type": 1,
     "dropdown": []
   },
   {
     "title": "افزودن محصول",
     "icon": "bi bi-plus-square",
     "target": "/",
+    "type": 1,
+
     "dropdown": []
   },
   {
     "title": "بلاگ و افزودن نوشته",
     "icon": "bi bi-body-text",
     "target": "/",
+    "type": 1,
     "dropdown": []
   },
   {
     "title": "فروشگاه شما",
     "icon": "bi bi-basket2",
     "target": "/",
+    "type": 1,
     "dropdown": [
       {
         "title": "محصولات",
@@ -48,18 +53,21 @@
     "title": "تغییر لوگو",
     "icon": "bi bi-textarea-t",
     "target": "/",
+    "type": 1,
     "dropdown": []
   },
   {
     "title": "ویرایش صفحات",
     "icon": "bi bi-file-earmark-text",
     "target": "/",
+    "type": 1,
     "dropdown": []
   },
   {
     "title": "تنظیمات فروشگاه",
     "icon": "bi bi-gear",
     "target": "/",
+    "type": 1,
     "dropdown": [
       {
         "title": "توضیح محصول",
@@ -87,6 +95,7 @@
     "title": "منو و دسته بندی",
     "icon": "bi bi-ui-checks-grid",
     "target": "/",
+    "type": 1,
     "dropdown": [
       {
         "title": "فهرست اول سایت",
@@ -99,5 +108,33 @@
         "target": "/"
       }
     ]
+  },
+  {
+    "title": "درخواست پشتیبانی",
+    "icon": "bi bi-headset",
+    "target": "/",
+    "type": 2,
+    "dropdown": []
+  },
+  {
+    "title": "ورود به وردپرس",
+    "icon": "bi bi-wordpress",
+    "target": "/",
+    "type": 2,
+    "dropdown": []
+  },
+  {
+    "title": "راهنمای سایت",
+    "icon": "bi bi-sign-turn-right",
+    "target": "/",
+    "type": 2,
+    "dropdown": []
+  },
+  {
+    "title": "مشاهده سایت",
+    "icon": "bi bi-eye",
+    "target": "/",
+    "type": 2,
+    "dropdown": []
   }
 ]

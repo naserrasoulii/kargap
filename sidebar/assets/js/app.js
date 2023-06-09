@@ -12,17 +12,25 @@ getDataFromJson().then((res) => {
 // items append this element
 const itemContainer = document.querySelector(".itemContainer1 .navCustom");
 
+const itemFooter = document.querySelector(
+  ".homeWithSideBar .sideBar .itemFooter .navCustom"
+);
 // create DOM with data
 function htmlCreate() {
   let x = 0;
   for (const item of data) {
-    if (item.dropdown.length > 1) {
-      withDropDown(item, x);
+    if (item.type == 2) {
+      addToHtmlType2(item);
     } else {
-      noDropDown(item);
+      if (item.dropdown.length > 1) {
+        withDropDown(item, x);
+      } else {
+        noDropDown(item);
+      }
     }
     x++;
   }
+  itemContainer.style.paddingBottom = itemFooter.offsetHeight + 20 + "px";
 }
 
 // item no Drop Dowm menu
@@ -124,6 +132,29 @@ function addClassToggle(e) {
     e.target.addEventListener("click", addClassToggle);
     checkClass(e.target);
   }
+}
+
+// type 2 item footer
+function addToHtmlType2(item) {
+  console.log(item);
+  let liItem = document.createElement("li");
+  let aItem = document.createElement("button");
+  let iItem = document.createElement("i");
+  liItem.classList.add("nav-item");
+  liItem.classList.add("navItemCustom");
+  liItem.classList.add("d-flex");
+  liItem.classList.add("align-items-center");
+  aItem.classList.add("nav-link");
+  aItem.classList.add("navLinkCustom");
+  aItem.innerText = item.title;
+  item.icon = item.icon.split(" ");
+  for (const icons of item.icon) {
+    iItem.classList.add(icons);
+  }
+  liItem.appendChild(iItem);
+  liItem.appendChild(aItem);
+
+  itemFooter.appendChild(liItem);
 }
 
 // remove from some divs active

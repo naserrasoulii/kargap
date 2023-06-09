@@ -98,8 +98,7 @@ body {
   border-radius: 10px;
 }
 .homeWithSideBar .sideBar .itemContainer1 .navCustom {
-  padding: 0 !important;
-  padding-bottom: 200px !important;
+  padding-right: 0 !important;
 }
 .homeWithSideBar .sideBar .itemContainer1 .navCustom .navLinkCustom {
   color: var(--lightColorCustom2);
@@ -248,7 +247,6 @@ body {
 .homeWithSideBar .sideBar .itemFooter {
   background-color: var(--lightColorCustom2);
   width: var(--widthSideBar);
-  /* transform: translateX(1rem); */
   padding: 1rem 0;
   border-radius: 0 0 10px 10px;
   position: absolute;
@@ -260,6 +258,13 @@ body {
   color: var(--blueColorCustom2);
   font-size: 18px;
   z-index: 1;
+  border: none;
+  background-color: transparent;
+}
+.homeWithSideBar .sideBar .itemFooter .navCustom .navItemCustom i {
+  color: var(--blueColorCustom1);
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 /* width */
