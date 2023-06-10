@@ -49,6 +49,7 @@ function noDropDown(item) {
   for (const icons of item.icon) {
     iItem.classList.add(icons);
   }
+  aItem.setAttribute("data-target-custom", item.id);
   liItem.appendChild(iItem);
   liItem.appendChild(aItem);
   itemContainer.appendChild(liItem);
@@ -99,6 +100,7 @@ function withDropDown(item, x) {
     aDropDown.classList.add("d-flex");
     aDropDown.classList.add("dropdown-item");
     aDropDown.classList.add("align-items-center");
+    aDropDown.setAttribute("data-target-custom", itemdropdown.id);
     itemdropdown.icon = itemdropdown.icon.split(" ");
     for (const icons1 of itemdropdown.icon) {
       iDropDown.classList.add(icons1);
