@@ -4,16 +4,19 @@
     url("./../fonts/PeydaWebFaNum-Regular.woff");
   font-weight: normal;
 }
+
 @font-face {
   font-family: "peyda";
   src: url("./../fonts/PeydaWebFaNum-Bold.woff2"),
     url("./../fonts/PeydaWebFaNum-Bold.woff");
   font-weight: bold;
 }
+
 body {
   font-family: "peyda";
   overflow-x: hidden;
 }
+
 :root {
   --lightColorCustom1: #e8e8e8;
   --lightColorCustom2: #a4a4a4;
@@ -22,6 +25,7 @@ body {
   --widthSideBar: 250px;
   --widthMain: 100px;
 }
+
 .homeWithSideBar {
   direction: rtl;
   text-align: right;
@@ -37,6 +41,7 @@ body {
   background-color: var(--lightColorCustom1);
   border-radius: 10px;
 }
+
 .homeWithSideBar .sideBar.show {
   position: absolute;
   top: 20px;
@@ -47,6 +52,7 @@ body {
   background-color: var(--lightColorCustom1);
   border-radius: 10px;
 }
+
 .homeWithSideBar .btnCloseMenu {
   width: 18px;
   height: 50px;
@@ -62,14 +68,17 @@ body {
   transition: all 0.3s;
   z-index: -1;
 }
+
 .homeWithSideBar .btnCloseMenu.show {
   right: calc(var(--widthSideBar) + 14px);
   top: 50%;
 }
+
 .homeWithSideBar .btnCloseMenu img {
   transform: rotate(180deg);
   transition: all 0.2s;
 }
+
 .homeWithSideBar .btnCloseMenu.show img {
   transform: rotate(0);
 }
@@ -85,10 +94,12 @@ body {
   overflow: hidden;
   transition: all 0.2s;
 }
+
 .homeWithSideBar .iframeContainerCustom.show {
   left: 10px;
   width: calc(100% - var(--widthSideBar) - 60px);
 }
+
 .homeWithSideBar .iframeContainerCustom iframe {
   width: 100%;
   height: 100%;
@@ -97,9 +108,11 @@ body {
   top: 0;
   border-radius: 10px;
 }
+
 .homeWithSideBar .sideBar .itemContainer1 .navCustom {
   padding-right: 0 !important;
 }
+
 .homeWithSideBar .sideBar .itemContainer1 .navCustom .navLinkCustom {
   color: var(--lightColorCustom2);
   font-weight: bold;
@@ -107,20 +120,14 @@ body {
   border: none;
   background: transparent;
 }
-.homeWithSideBar
-  .sideBar
-  .itemContainer1
-  .navCustom
-  .navLinkCustom.dropdown-toggle {
+
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .navLinkCustom.dropdown-toggle {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.homeWithSideBar
-  .sideBar
-  .itemContainer1
-  .navCustom
-  .navLinkCustom.dropdown-toggle::after {
+
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .navLinkCustom.dropdown-toggle::after {
   background: url("./../images/arrow-bottom.svg");
   border: none;
   width: 16px;
@@ -128,15 +135,12 @@ body {
   text-align: left;
   background-size: 100% 100%;
 }
+
 .homeWithSideBar .sideBar .itemContainer1 .navCustom .navItemCustom {
   position: relative;
 }
-.homeWithSideBar
-  .sideBar
-  .itemContainer1
-  .navCustom
-  .navItemCustom.active
-  .navLinkCustom {
+
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .navItemCustom.active .navLinkCustom {
   color: #fff;
   z-index: 1;
 }
@@ -145,6 +149,7 @@ body {
   color: var(--blueColorCustom1);
   font-size: 1.3rem;
 }
+
 .homeWithSideBar .sideBar .itemContainer1 .navCustom .navItemCustom i::before {
   vertical-align: middle;
 }
@@ -153,6 +158,7 @@ body {
   z-index: 1;
   color: #fff !important;
 }
+
 /*
 .homeWithSideBar .sideBar .itemContainer1 .navCustom .navItemCustom.active svg {
   z-index: 1;
@@ -163,29 +169,42 @@ body {
 .homeWithSideBar .sideBar .itemContainer1 .navCustom .navItemCustom.active img {
   stroke: #fff !important;
 }
+
 .mtCustom1 {
   margin-top: 0.6rem;
 }
-.homeWithSideBar
-  .sideBar
-  .itemContainer1
-  .navCustom
-  .navItemCustom.active::after {
+
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .navItemCustom::after {
   content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: -26px;
   width: calc(var(--widthSideBar) + 20px);
-  height: calc(100% + 10px);
+  height: 0;
   background-color: var(--blueColorCustom1);
   border-radius: 5px;
   z-index: 0;
+  transition: all 0.3s;
+}
+
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .navItemCustom.active::after {
+  height: calc(100% + 10px);
+  /* content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -26px;
+  width: calc(var(--widthSideBar) + 20px);
+  background-color: var(--blueColorCustom1);
+  border-radius: 5px;
+  z-index: 0; */
 }
 
 .homeWithSideBar .sideBar .itemContainer1 .navCustom .nav-item {
   margin-bottom: 1rem;
 }
+
 .homeWithSideBar .sideBar .itemContainer1 .navCustom .dropdown-menu.show {
   position: static !important;
   margin-bottom: 1rem;
@@ -194,12 +213,8 @@ body {
   border: none;
   text-align: right;
 }
-.homeWithSideBar
-  .sideBar
-  .itemContainer1
-  .navCustom
-  .dropdown-menu.show
-  .dropdown-item {
+
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .dropdown-menu.show .dropdown-item {
   background: transparent;
 }
 
@@ -208,39 +223,29 @@ body {
   cursor: pointer;
   font-size: 1rem;
 }
+
 .homeWithSideBar .sideBar .itemContainer1 .navCustom .toggleDiv.show a {
   color: #fff;
   cursor: pointer;
 }
-.homeWithSideBar
-  .sideBar
-  .itemContainer1
-  .navCustom
-  .dropdown-menu.show
-  button {
+
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .dropdown-menu.show button {
   color: #fff;
   font-size: 1rem;
   white-space: normal;
 }
+
 .homeWithSideBar .sideBar .itemContainer1 .navCustom .toggleDiv.show button {
   color: #fff;
   white-space: normal;
 }
-.homeWithSideBar
-  .sideBar
-  .itemContainer1
-  .navCustom
-  .toggleDiv.show
-  .navLinkCustom::after {
+
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .toggleDiv.show .navLinkCustom::after {
   transform: rotate(180deg);
   color: #fff;
 }
-.homeWithSideBar
-  .sideBar
-  .itemContainer1
-  .navCustom
-  .toggleDiv
-  .navLinkCustom::after {
+
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .toggleDiv .navLinkCustom::after {
   transition: all 0.3s;
 }
 
@@ -253,6 +258,7 @@ body {
   bottom: 0;
   left: 0;
 }
+
 .homeWithSideBar .sideBar .itemFooter .navCustom .navItemCustom .navLinkCustom {
   font-weight: bold;
   color: var(--blueColorCustom2);
@@ -261,6 +267,7 @@ body {
   border: none;
   background-color: transparent;
 }
+
 .homeWithSideBar .sideBar .itemFooter .navCustom .navItemCustom i {
   color: var(--blueColorCustom1);
   font-size: 1.3rem;
