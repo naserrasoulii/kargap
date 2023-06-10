@@ -24,6 +24,7 @@ body {
   --blueColorCustom2: #66509ab0;
   --widthSideBar: 250px;
   --widthMain: 100px;
+  --yelloColor: #eeef20;
 }
 
 .homeWithSideBar {
@@ -129,13 +130,21 @@ body {
   background: transparent;
 }
 
-.homeWithSideBar .sideBar .itemContainer1 .navCustom .navLinkCustom.dropdown-toggle {
+.homeWithSideBar
+  .sideBar
+  .itemContainer1
+  .navCustom
+  .navLinkCustom.dropdown-toggle {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.homeWithSideBar .sideBar .itemContainer1 .navCustom .navLinkCustom.dropdown-toggle::after {
+.homeWithSideBar
+  .sideBar
+  .itemContainer1
+  .navCustom
+  .navLinkCustom.dropdown-toggle::after {
   background: url("./../images/arrow-bottom.svg");
   border: none;
   width: 16px;
@@ -148,7 +157,12 @@ body {
   position: relative;
 }
 
-.homeWithSideBar .sideBar .itemContainer1 .navCustom .navItemCustom.active .navLinkCustom {
+.homeWithSideBar
+  .sideBar
+  .itemContainer1
+  .navCustom
+  .navItemCustom.active
+  .navLinkCustom {
   color: #fff;
   z-index: 1;
 }
@@ -165,17 +179,6 @@ body {
 .homeWithSideBar .sideBar .itemContainer1 .navCustom .navItemCustom.active i {
   z-index: 1;
   color: #fff !important;
-}
-
-/*
-.homeWithSideBar .sideBar .itemContainer1 .navCustom .navItemCustom.active svg {
-  z-index: 1;
-} 
-*/
-/* 
- */
-.homeWithSideBar .sideBar .itemContainer1 .navCustom .navItemCustom.active img {
-  stroke: #fff !important;
 }
 
 .mtCustom1 {
@@ -197,7 +200,11 @@ body {
   /* transition-delay: 0.3s; */
 }
 
-.homeWithSideBar .sideBar .itemContainer1 .navCustom .navItemCustom.active::after {
+.homeWithSideBar
+  .sideBar
+  .itemContainer1
+  .navCustom
+  .navItemCustom.active::after {
   height: calc(100% + 10px);
 }
 
@@ -228,17 +235,28 @@ body {
   text-align: right;
 }
 
-.homeWithSideBar .sideBar .itemContainer1 .navCustom .dropdown-menu.show .dropdown-item {
+.homeWithSideBar
+  .sideBar
+  .itemContainer1
+  .navCustom
+  .dropdown-menu.show
+  .dropdown-item {
   background: transparent;
 }
 
-.homeWithSideBar .sideBar .itemContainer1 .navCustom .dropdown-menu.show .dropdown-item.active * {
-  color: #eeef20 !important;
+.homeWithSideBar
+  .sideBar
+  .itemContainer1
+  .navCustom
+  .dropdown-menu.show
+  .dropdown-item.active
+  * {
+  color: var(--yelloColor) !important;
   font-weight: bold;
   /* background: transparent; */
 }
 
-.homeWithSideBar .sideBar .itemContainer1 .navCustom .dropdown-menu.show a {
+.homeWithSideBar .sideBar .itemContainer1 .navCustom .dropdown-menu.show {
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
@@ -249,10 +267,17 @@ body {
   cursor: pointer;
 }
 
-.homeWithSideBar .sideBar .itemContainer1 .navCustom .dropdown-menu.show button {
+.homeWithSideBar
+  .sideBar
+  .itemContainer1
+  .navCustom
+  .dropdown-menu.show
+  button {
   color: #fff;
   font-size: 1rem;
   white-space: normal;
+  position: relative;
+  z-index: 50;
 }
 
 .homeWithSideBar .sideBar .itemContainer1 .navCustom .toggleDiv.show button {
@@ -260,12 +285,22 @@ body {
   white-space: normal;
 }
 
-.homeWithSideBar .sideBar .itemContainer1 .navCustom .toggleDiv.show .navLinkCustom::after {
+.homeWithSideBar
+  .sideBar
+  .itemContainer1
+  .navCustom
+  .toggleDiv.show
+  .navLinkCustom::after {
   transform: rotate(180deg);
   color: #fff;
 }
 
-.homeWithSideBar .sideBar .itemContainer1 .navCustom .toggleDiv .navLinkCustom::after {
+.homeWithSideBar
+  .sideBar
+  .itemContainer1
+  .navCustom
+  .toggleDiv
+  .navLinkCustom::after {
   transition: all 0.3s;
 }
 
@@ -292,6 +327,30 @@ body {
   color: var(--blueColorCustom1);
   font-size: 1.3rem;
   font-weight: bold;
+}
+.homeWithSideBar
+  .sideBar
+  .itemFooter
+  .navCustom
+  .navItemCustom.active
+  .navLinkCustom {
+  color: var(--yelloColor) !important;
+  font-weight: normal;
+}
+
+.homeWithSideBar .sideBar .itemFooter .navCustom .navItemCustom.active i {
+  color: var(--yelloColor) !important;
+}
+
+.homeWithSideBar
+  .sideBar
+  .itemContainer1
+  .navItemCustom.dropdown.active
+  .toggleDiv
+  .dropdown-toggle::after {
+  transform: rotate(180deg);
+  background: url("./../images/arrow-top.svg");
+  background-size: 100% 100%;
 }
 
 /* width */
