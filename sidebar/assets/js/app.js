@@ -31,6 +31,37 @@ function htmlCreate() {
     x++;
   }
   itemContainer.style.paddingBottom = itemFooter.offsetHeight + 20 + "px";
+  let itemsss = document.querySelectorAll(
+    ".homeWithSideBar .sideBar .itemContainer1 .navItemCustom"
+  );
+  itemsss.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      if (!e.target.classList.contains("active")) {
+        itemsss.forEach((elem) => {
+          elem.classList.remove("active");
+        });
+        e.target.classList.add("active");
+        if (e.target.classList.contains("dropdown")) {
+          let dropToggle1 = document.querySelectorAll(
+            ".homeWithSideBar .sideBar .toggleDiv .dropdown-menu"
+          );
+          dropToggle1.forEach((elements) => {
+            elements.classList.remove("show");
+          });
+          let dropToggle = e.target.childNodes[1];
+          dropToggle.childNodes[1].classList.add("show");
+        } else {
+          let dropToggle = document.querySelectorAll(
+            ".homeWithSideBar .sideBar .toggleDiv .dropdown-menu"
+          );
+          console.log(dropToggle);
+          dropToggle.forEach((elements) => {
+            elements.classList.remove("show");
+          });
+        }
+      }
+    });
+  });
 }
 
 // item no Drop Dowm menu
@@ -189,18 +220,10 @@ function toggleSideBar() {
   const iframeContainer = document.querySelector(
     ".homeWithSideBar .iframeContainerCustom"
   );
-  sideBar.classList.toggle("show");
-  btnCloseMenu.classList.toggle("show");
-  iframeContainer.classList.toggle("show");
-  stopCloseDropDown();
+  sideBar.classList.toggle("openMenu");
+  btnCloseMenu.classList.toggle("openMenu");
+  iframeContainer.classList.toggle("openMenu");
 }
-function stopCloseDropDown() {
-  let dropDown = document.querySelectorAll(".homeWithSideBar .dropdown");
-  dropDown.forEach((el) => {
-    if (el.classList.contains("active")) {
-      el.classList.remove("active");
-    }
-  });
-}
+
 const btnCloseMenu = document.querySelector(".homeWithSideBar .btnCloseMenu");
 btnCloseMenu.addEventListener("click", toggleSideBar);
